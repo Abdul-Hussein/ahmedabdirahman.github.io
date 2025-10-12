@@ -32,17 +32,24 @@
     margin: 1.5rem auto;
     padding-bottom: 1rem;
   }
+.project_display img {
+  border-radius: 0 !important;
+}
+.project_display figure {
+  border-radius: 0 !important;
+  overflow: hidden; /* prevents inherited rounding from parent */
+}
 
   .project_display figure {
     width: 100%;
   }
 
-  .project_display img.fig {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 0; 
-  }
+.project_display img.fig {
+  border-radius: 0 !important;  /* force square corners */
+  object-fit: cover;            /* ensures clean cropping */
+  display: block;               /* prevents spacing artifacts */
+}
+
 
   .project_display .text-container {
     width: 100%;
@@ -189,8 +196,7 @@
               <i class="fab fa-html5 html5"></i>
             </div>
             <div class="button-container">
-              <b class="button"><a href="#">View it here</a></b>
-              <b class="button"><a href="https://github.com/Abdul-Hussein/GymMgt.git" target="_blank">GitHub</a></b>
+              <b class="button"><a href="https://github.com/Abdul-Hussein/Gym-System" target="_blank">View Code</a></b>
             </div>
           </div>
         </div>
@@ -214,8 +220,7 @@
               <i class="fa-solid fa-database"></i>
             </div>
             <div class="button-container">
-              <b class="button"><a href="#">View it here</a></b>
-              <b class="button"><a href="https://github.com/Abdul-Hussein/Trading-Platform" target="_blank">GitHub</a></b>
+              <b class="button"><a href="https://github.com/Abdul-Hussein/Trading-Platform" target="_blank">View Code</a></b>
             </div>
           </div>
         </div>
@@ -246,8 +251,7 @@
               <i class="fa-solid fa-database"></i>
             </div>
             <div class="button-container">
-              <b class="button"><a href="#">View it here</a></b>
-              <b class="button"><a href="https://github.com/Abdul-Hussein/TicketingSystem" target="_blank">GitHub</a></b>
+              <b class="button"><a href="https://github.com/Abdul-Hussein/Ticketing-system" target="_blank">View Code</a></b>
             </div>
           </div>
         </div>
@@ -271,8 +275,7 @@
               <i class="fa-brands fa-css3-alt css3"></i>
             </div>
             <div class="button-container">
-              <b class="button"><a href="#">View it here</a></b>
-              <b class="button"><a href="https://github.com/Abdul-Hussein/HORSE-RACER-GAME" target="_blank">GitHub</a></b>
+              <b class="button"><a href="https://github.com/Abdul-Hussein/HORSE-RACER-GAME" target="_blank">View Code</a></b>
             </div>
           </div>
         </div>
