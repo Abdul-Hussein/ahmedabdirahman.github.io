@@ -1,165 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About-page</title>
-    <script src="script.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="prec onnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Staatliches&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Staatliches&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="About.css">
-    <link rel="stylesheet" href="Menubar.css">
-      <style>   
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About-page</title>
+  <script src="script.js"></script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="footer.css" />
+  <link rel="stylesheet" href="About.css" />
+  <link rel="stylesheet" href="Menubar.css" />
+
+  <style>
     @media (max-width: 768px) {
-      /* Call mobile.css for screens with a width of 768px or less */
-      @import url('mobile.css');
+      @import url("mobile.css");
+    }
+
+     @media (max-width: 768px) {
+      @import url("mobile.css");
+    }
+    @media (max-width: 768px) {
+      /* ABOUT ME SECTION (for mobile) */
+#aboutme {
+  padding: 1.5rem 1rem;
+  text-align: left;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.aboutme {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: stretch;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.aboutme-border,
+.aboutme-content {
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  padding: 1rem;
+  border-left: 3px solid #111;
+  border-radius: 0;
+  width: 100%;
+  box-sizing: border-box; /* prevents overflow from padding + border */
+}
+
+.aboutme-border p,
+.aboutme-content p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+}
+
+.aboutme-border strong,
+.aboutme-content strong {
+  color: #111;
+  font-weight: 600;
+}
+
+      /* Footer */
+      .footer-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+      }
+
+      .footer-section {
+        margin-bottom: 1rem;
+      }
+
+      .footer-section h3 {
+        font-size: 1.1rem;
+      }
+
+      .footer-section ul li {
+        font-size: 0.95rem;
+        padding: 4px 0;
+      }
+
+      .contact-info {
+        margin-top: 1.5rem;
+        text-align: center;
+      }
     }
   </style>
-       </head>      
-    
-         <nav>
+</head>
+
+<body>
+  <nav>
     <div class="menu-icon" id="clicked-menu" onclick="toggleMenu()">&#9776;</div>
     <ul class="menu">
       <li><a href="index.html">Home</a></li>
-      <li><a href="About.html">About</a></li>
+      <li><a href="About.html" class="active">About</a></li>
       <li><a href="Projects.html">Projects</a></li>
       <li><a href="Contact.html">Contact</a></li>
-    
     </ul>
   </nav>
 
-        <main>
-        <div class="Menu">
-          <ul>
-             <li><a href="#work-experience">Work experience></a></li>
-             <li><a href="#certifications">Certifications></a></li>
-          </ul>
+  <main>
+    <div class="Menu">
+      <ul>
+        <li><a href="#work-experience">Work Experience ></a></li>
+        <li><a href="#certifications">Certifications ></a></li>
+      </ul>
+    </div>
+
+    <h2>ABOUT ME</h2>
+    <section id="aboutme" class="info">
+      <div class="aboutme">
+        <div class="aboutme-border">
+          <p>
+            My name is Abdirahman Hussein, and I am currently pursuing a <strong>BSc in Computer Science with Management</strong> at Queen Mary University of London. I am deeply curious about how systems operate at scale deeply interested in backend pipelines to distributed architectures.
+          </p>
+        </div>
+        <div class="aboutme-content">
+          <p>
+            Over the past few years, I have worked across software and IT domains.  I have built with <strong>Java, Spring Boot, and SQL</strong>, and recently gained hands on experience with <strong>Power Platform</strong> and <strong>Databricks</strong> for data-driven automation and AI projects.
+          </p>
+         
+        </div>
+      </div>
+    </section>
+
+    <h2>WORK EXPERIENCE</h2>
+    <section id="work-experience">
+      <article class="container-timeline">
+        <section class="timeline">
+          <div class="container right">
+            <div class="content">
+              <h3>2025</h3>
+              <h4>Cummins Inc, UK</h4>
+              <p>IT Systems Analyst Placement Student</p>
+              <p>June 2025 – Present</p>
+              <ul>
+                <li>Designed and deployed interactive Power BI dashboards for multi million row datasets, cutting reporting time by 40%.</li>
+                <li>Built a Retrieval Augmented Generation (RAG) model in Databricks to support ERP migration.</li>
+                <li>Automated approval workflows using Power Apps and Power Automate, reducing manual effort by 30%.</li>
+              </ul>
+            </div>
           </div>
-              
-            
-<h2>ABOUT ME</h2>    
-<section id="aboutme" class="info">
-  <div class="aboutme">
-    <div class="aboutme-border">
-    
-      <p>
-        My name is Abdirahman Hussein and I am a student at Queen Mary University studying Computer Science.
-        I am a Computer Science student and I am looking for new opportunities to learn and grow.
-      </p>
-    </div>
-    <div class="aboutme-content">
-      <p>
-        I have experience with programming languages and have worked in different environments. I have experience with Java, Spring Boot, HTML, CSS, and JavaScript.
-        I have also worked on different projects and have experience with different technologies.
-      </p>
-    </div>
-  </div>
-</section>
 
-            
-<a href="#work-experience"></a>
-<h2>WORK EXPERIENCE</h2>
-<section id="work-experience">
-<section id="link" class="header">
-</section>
-<article class="container-timeline">
-<section class="timeline">
+          <div class="container left">
+            <div class="content">
+              <h3>2024</h3>
+              <h4>Queen Mary University, London</h4>
+              <p>EECS Demonstrator</p>
+              <p>September 2024 – December 2024</p>
+              <ul>
+                <li>Guided first-year students in programming labs and provided tailored feedback on assignments.</li>
+                <li>Assisted lecturers in managing coursework delivery and improving student engagement.</li>
+              </ul>
+            </div>
+          </div>
 
-  <div class="container right">
-    <div class="content">
-      <h3>2024</h3>
-      <h4>CJs, Kenya</h4>
-      <p>IT Support</p>
-      <p>May 2024-Current</p>
+          <div class="container right">
+            <div class="content">
+              <h3>2024</h3>
+              <h4>CJs, Kenya</h4>
+              <p>IT Support</p>
+              <p>June 2024 – September 2024</p>
+              <ul>
+                <li>Integrated cloud storage solutions for reliable backups and disaster recovery.</li>
+                <li>Implemented a ticketing system to streamline IT service requests and track resolutions.</li>
+                <li>Developed Python scripts for faster diagnostics and system troubleshooting.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="container left">
+            <div class="content">
+              <h3>2023</h3>
+              <h4>Axis Tuition Center, London</h4>
+              <p>Web Developer Intern</p>
+              <p>November 2023 – January 2024</p>
+              <ul>
+                <li>Enhanced user experience through responsive web design and optimized site performance.</li>
+                <li>Added interactive learning features like quizzes and forums to increase engagement.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="container right">
+            <div class="content">
+              <h3>2022 – 2023</h3>
+              <h4>City Tyres, Uganda</h4>
+              <p>Sales Promoted Marketer</p>
+              <p>May 2022 – September 2023</p>
+              <ul>
+                <li>Developed strong customer relationships that led to a 20% increase in monthly sales targets.</li>
+                <li>Promoted to Marketer within two months for consistent performance and initiative.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </article>
+    </section>
+
+    <article id="skills">
+      <h2>TOP SKILLS</h2>
       <ul>
-        <li>Achieved employee satisfaction by effectively solving IT-related issues, and immediate help in fixing dysfunctional technologies</li>
-        <li>Involvement in the choice of IT infrastructure focusing on the purchase of cheap and maintainable equipment. Collaborated with the procurement team to assess available options leveraging expertise and hence contributing to cost savings on infrastructure while ensuring scalability.</li>
+        <li class="items">
+          <img src="first.png" alt="first" />
+          <p>Java & Spring Boot</p>
+        </li>
+        <li class="items">
+          <img src="second.png" alt="second" />
+          <p>Power Platform & Databricks</p>
+        </li>
+        <li class="items">
+          <img src="third.png" alt="third" />
+          <p>HTML, CSS, JavaScript</p>
+        </li>
       </ul>
-    </div>
-  </div>
+    </article>
 
-    
-  <div class="container left">
-    <div class="content">
-      <h3>2024</h3>
-      <h4>Axis Tuition Center, London</h4>
-      <p>Web Developer</p>
-      <p>November 2023 – January 2024</p>
+    <aside id="certifications">
+      <h2>CERTIFICATIONS</h2>
       <ul>
-        <li>Effectively implemented responsive web design principles, ensuring the 
-platform was fully optimized for an array of devices and diverse screen sizes. This strategic approach significantly improved user experience and 
-accessibility across smartphones, tablets, and desktops.</li>
-        <li>Seamlessly integrated a suite of interactive features, including quizzes, forums, and progress trackers, into the platform. This enhancement fostered a more 
-engaging and interactive learning environment, leading to noticeable improvements in user engagement and overall learning outcomes.</li>
+        <li>Distributed Systems Design</li>
+        <li>Six Sigma Yellow Belt (Level 3)</li>
+        <li>Power BI PL-300 (Intermediate)</li>
       </ul>
-    </div>
-  </div>
-  
-  <div class="container right">
-    <div class="content">
-      <h3>2022</h3>
-      <h4>CityTyres, Uganda</h4>
-      <p>Sales Promoted Marketer</p>
-      <p>May 2022 - September 2022 | May 2023 - Spetember 2023 </p>
-      <ul>
-        <li>Consequently achieved sales targets by leveraging in-depth product knowledge, communicating effectively with a team manager resulting in a 20% increase over set targets</li>
-        <li>Managed to develop strong customer relationships through personalized consultations offering tailored tire solutions that met specific needs and preferences</li>
-        <li>Promoted to a Marketer position after hitting targets consecutively for two months.</li>
-      </ul>
-    </div>
-  </div>
-  
-
-  
-</section>
-</article>
-
-<article id="skills">
-  <h2>TOP SKILLS</h2>
- <ul>
-    <li class="items">
-      <img src="first.png" alt="first">
-      <p>Java Programming Language</p>
-    </li>
-    <li class="items">
-      <img src="second.png" alt="second">
-      <p>Spring Boot</p>
-    </li>
-    <li class="items">
-      <img src="third.png" alt="third">
-      <p>HTML, CSS and JavaScript</p>
-    </li>
-  </ul>
-</article>
-
-
-            <aside id="certifications">
-                <h2>CERTIFICATIONS</h2>
-                <ul>
-                    <li>
-                      FITA JAVA TRAINING
-                    </li>
-                   
-                    <li>
-                        FY24 EMBRACE MENTORING PROGRAM
-                    </li>
-                    <li>
-                        VIRTUAL INTERNSHIP EXPERIENCE PROGRAM
-                    </li>
-          
-                </ul>
-            </aside>
-            
-        </main>
+    </aside>
+  </main>
 
   <footer id="footer" class="footer">
     <div class="footer-content">
@@ -170,13 +245,15 @@ engaging and interactive learning environment, leading to noticeable improvement
           <li><a href="Home-BlogPage.html">More About Me</a></li>
         </ul>
       </div>
-      <div class="footer-section">
-        <h3>Companies Worked For</h3>
-        <ul>
-          <li><a href="https://mandelagroup.co.ug/">City Tyres</a></li>
-          <li><a href="https://www.tuitioncentres.org/">Axis Tuition Center</a></li>
-        </ul>
-      </div>
+       <div class="footer-section">
+  <h3> Relevant Industry Experience</h3>
+  <ul>
+    <li>Systems Analysis</li>
+    <li>IT Support </li>
+    <li>Web Development</li>
+  
+  </ul>
+</div>
       <div class="footer-section">
         <h3>Achievements</h3>
         <ul>
@@ -187,13 +264,9 @@ engaging and interactive learning environment, leading to noticeable improvement
     </div>
     <div class="contact-info">
       <h3>Contact Me</h3>
-      <p>Email: abdulxxx321@gmail.com</p>
-      <p>Phone: +1 123-456-7890</p>
+      <p>Email: abdirahmanhussein983@gmail.com</p>
+      <p>Phone: 07442343563</p>
     </div>
   </footer>
-      
-    </div>
-  
-
-
+</body>
 </html>

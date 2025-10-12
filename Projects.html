@@ -1,53 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Page Title</title>
-    <link rel="stylesheet" href="CSS/Contactfinal.css"> <!-- Link to external CSS file -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <script src="https://kit.fontawesome.com/26111a072d.js" crossorigin="anonymous"></script>
-    <!-- box icons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!--=============== REMIXICONS ===============-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
-    <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="Menubar.css">
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="projects.css">
-    <link rel="stylesheet" href="footer.css">
-     <style>   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <link rel="stylesheet" href="CSS/Contactfinal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="https://kit.fontawesome.com/26111a072d.js" crossorigin="anonymous"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+  <link rel="stylesheet" href="Menubar.css">
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="projects.css">
+  <link rel="stylesheet" href="footer.css">
+
+  <style>
+    /* Base mobile import (existing) */
     @media (max-width: 768px) {
-      /* Call mobile.css for screens with a width of 768px or less */
       @import url('mobile.css');
     }
+
+  @media (max-width: 768px) {
+
+ .project_display {
+    flex-direction: column; /* stack vertically */
+    align-items: center;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    margin: 1.5rem auto;
+    padding-bottom: 1rem;
+  }
+
+  .project_display figure {
+    width: 100%;
+  }
+
+  .project_display img.fig {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0; 
+  }
+
+  .project_display .text-container {
+    width: 100%;
+    padding: 1rem 1.2rem;
+    text-align: left; /* consistent with your main site text */
+  }
+
+  .text-container h2.header {
+    font-size: 1.2rem;
+    margin: 0.4rem 0;
+  }
+
+  .text-container .paragraph {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .images {
+    justify-content: flex-start;
+  }
+
+  .button-container {
+    justify-content: flex-start;
+  }
+
+  .button-container .button a {
+    padding: 8px 14px;
+    font-size: 0.9rem;
+  }
+
+  .images {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    margin: 0.8rem 0;
+  }
+
+  .images i {
+    font-size: 1.3rem;
+  }
+
+  /* Make spacing uniform between projects */
+  .Projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.8rem;
+  }
+
+      /* Footer */
+      .footer-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+      }
+
+      .footer-section {
+        margin-bottom: 1rem;
+      }
+
+      .footer-section h3 {
+        font-size: 1.1rem;
+      }
+
+      .footer-section ul li {
+        font-size: 0.95rem;
+        padding: 4px 0;
+      }
+
+      .contact-info {
+        margin-top: 1.5rem;
+        text-align: center; 
+      }
+}
+
   </style>
 </head>
-<body>
-    <header>
-    <nav>
-    <div class="menu-icon" id="clicked-menu" onclick="toggleMenu()">&#9776;</div>
-    <ul class="menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="About.html">About</a></li>
-      <li><a href="Projects.html">Projects</a></li>
-      <li><a href="Contact.html">Contact</a></li>     
-    </ul>
-  </nav>
-    </header>
 
-    <main>
-      <section class="video-section">
-        <video autoplay loop muted plays-inline class="back-video">
-            <source src="Video.mp4" type="video/mp4">
-        </video>
-        <div class="video-overlay">
-            <h1 class="video-title">My Projects</h1>
-            <button class="video-button"><a href="#Projects">Explore</a></button>
-        </div>
+<body>
+  <header>
+    <nav>
+      <div class="menu-icon" id="clicked-menu" onclick="toggleMenu()">&#9776;</div>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Projects.html">Projects</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="video-section">
+      <video autoplay loop muted plays-inline class="back-video">
+        <source src="Video.mp4" type="video/mp4">
+      </video>
+      <div class="video-overlay">
+        <h1 class="video-title">My Projects</h1>
+        <button class="video-button"><a href="#Projects">Explore</a></button>
+      </div>
     </section>
-        
+
     <section>
       <div class="logos">
         <div class="logos-slide">
@@ -64,145 +161,163 @@
         </div>
       </div>
     </section>
-    
-        <section>
-          <h1>What I Have Worked On</h1>
-        </section>
 
-      
-        <article class="Projects" id="Projects">
-           <div class="project_display">
-    <figure>
-        <img class="fig" src="gymmgt.jpeg" alt="Gym Management System">
-        <img class="badge" src="first.png" alt="Rank Icon" class="overlayed">
-    </figure>
-    <div class="text-container">
-        <h2 class="header">Gym Management System</h2>
-        <div class="text-content">
-            <p class="paragraph">Built a Gym Application for a local gym where gym admins can oversee operations. Features include member registration, session scheduling, trainer management, and detailed reporting to help the gym  keep track of all gym activities and performance metrics.</p>
+    <section>
+      <h1>What I Have Worked On</h1>
+    </section>
+
+    <!-- PROJECTS -->
+    <article class="Projects" id="Projects">
+
+      <!-- GYM MANAGEMENT SYSTEM -->
+      <div class="project_display">
+        <figure>
+          <img class="fig" src="gymmgt.jpeg" alt="Gym Management System">
+          <img class="badge" src="first.png" alt="Rank Icon" class="overlayed">
+        </figure>
+        <div class="text-container">
+          <h2 class="header">Gym Management System</h2>
+          <div class="text-content">
+            <p class="paragraph">
+              Designed a full-stack web system to streamline gym operations, including member registration, trainer management, and class scheduling.
+              Implemented REST APIs using Spring Boot and Hibernate for seamless data handling, and configured a Jenkins CI/CD pipeline for automated builds and deployments.
+              The system helped improve administrative efficiency and reduced manual record-keeping.
+            </p>
             <div class="images">
-                <i class="fa-brands fa-css3-alt css3"></i>
-                <i class="fa-brands fa-java java"></i>
-                <i class="fab fa-html5 html5"></i>
+              <i class="fa-brands fa-css3-alt css3"></i>
+              <i class="fa-brands fa-java java"></i>
+              <i class="fab fa-html5 html5"></i>
             </div>
             <div class="button-container">
-                <b class="button"><a href="#">View it here</a></b>
-                <b class="button"><a href="https://github.com/Abdul-Hussein/GymMgt.git">GitHub</a></b>
+              <b class="button"><a href="#">View it here</a></b>
+              <b class="button"><a href="https://github.com/Abdul-Hussein/GymMgt.git" target="_blank">GitHub</a></b>
             </div>
+          </div>
         </div>
-    </div>
-</div>
+      </div>
 
+      <br><br><br>
 
-            <br><br><br>
-
-            <div class="project_display">
-                <div class="text-container">
-                    <h2 class="header">The Book Register App</h2>
-                    <div class="text-content">
-                        <p class="paragraph">Built a platform managing my books. It features a table layout for organized presentation, a search bar for quick book discovery, and pagination for navigating through extensive listings.</p>
-                         <div class="images">
-                          <img class="project-languages" src="Spring-boot-logo.png" alt="">
-                          <i class="fa-brands fa-css3-alt css3"></i>
-                          <i class="fa-brands fa-java java"></i>
-                          <i class="fab fa-html5 html5"></i>
-                        </div>
-                        <div class="button-container">
-                            <b class="button"><a href="#">View it here</a></b>
-                            <b class="button"><a href="https://github.com/Abdul-Hussein/BookManagement.git">GitHub</a></b>
-                        </div>
-                    </div>
-                </div>
-                <figure>
-                    <img class="fig" src="Bookreg-photo.png" alt="FPL PROJECT">
-                    <img class="badge" src="second.png" alt="Rank Icon" class="overlayed">
-                </figure>
+      <!-- TRADING PLATFORM -->
+      <div class="project_display">
+        <div class="text-container">
+          <h2 class="header">Trading Platform</h2>
+          <div class="text-content">
+            <p class="paragraph">
+              Developed a distributed trading system in Java using Dockerized microservices.
+              Integrated live market data from CoinPaprika API and implemented features like stop orders, suspicious transaction detection, and MFA security.
+              Added admin dashboards for monitoring system latency and managing flagged transactions.
+            </p>
+            <div class="images">
+              <i class="fa-brands fa-java java"></i>
+              <i class="fa-brands fa-docker"></i>
+              <i class="fa-solid fa-database"></i>
             </div>
-
-
-            <br><br><br>
-                 <div class="project_display">
-                <figure>
-                    <img class="fig" src="HorseRacer photo.png" alt="FPL PROJECT">
-                    <img class="badge" src="third.png" alt="Rank Icon" class="overlayed">
-                </figure>
-                <div class="text-container">
-                    <h2 class="header">Horse Racer Game</h2>
-                    <div class="text-content">
-                        <p class="paragraph">Used Java to create a horse Racer game. Made use of Java Swing to add animations to the game, such as allowing users to experience a  virtual race experience, printing out the winner and allowing users to customize horses.</p>
-                            <div class="images">
-                                
-                              <i class="fa-brands fa-java java"></i>
-                          
-                            </div>
-                        <div class="button-container">
-                            <b class="button"><a href="#">View it here</a></b>
-                            <b class="button"><a href="https://github.com/Abdul-Hussein/HORSE-RACER-GAME/tree/GUI-Features">GitHub</a></b>
-                        </div>
-                    </div>
-                </div>
+            <div class="button-container">
+              <b class="button"><a href="#">View it here</a></b>
+              <b class="button"><a href="https://github.com/Abdul-Hussein/Trading-Platform" target="_blank">GitHub</a></b>
             </div>
+          </div>
+        </div>
+        <figure>
+          <img class="fig" src="trading.png" alt="Trading Platform">
+          <img class="badge" src="second.png" alt="Rank Icon" class="overlayed">
+        </figure>
+      </div>
 
-            <div class="project_display">
-               
-                <div class="text-container">
-                    <h2 class="header">The Fantasy League Application</h2>
-                    <div class="text-content">
-                        <p class="paragraph">Built a fantasy application using Java Swing where users can choose a team, strategize lineups, can keep track of the stats in the games competed in and compete against friends in simulated football matches.</p>
-                            <div class="images">
-                               
-                              <i class="fa-brands fa-java java"></i>
-                        
-                            </div>
-                        <div class="button-container">
-                            <b class="button"><a href="#">View it here</a></b>
-                            <b class="button"><a href="https://github.com/Abdul-Hussein/fantasyLeague.git">GitHub</a></b>
-                        </div>
-                    </div>
-                </div>
-                 <figure>
-                    <img class="fig" src="Fpl photo.png" alt="FPL PROJECT">
-                    <img class="badge" src="fourth.png" alt="Rank Icon" class="overlayed">
-                </figure>
+      <br><br><br>
+
+      <!-- TICKETING SYSTEM -->
+      <div class="project_display">
+        <figure>
+          <img class="fig" src="ticketingsystem.png" alt="Ticketing System">
+          <img class="badge" src="third.png" alt="Rank Icon" class="overlayed">
+        </figure>
+        <div class="text-container">
+          <h2 class="header">Ticketing System</h2>
+          <div class="text-content">
+            <p class="paragraph">
+              Created a centralized IT service management tool using VB.NET and SQL Server, enabling staff to log, assign, and resolve IT issues efficiently.
+              Introduced a role-based authentication system and reporting dashboard that improved issue tracking and transparency.
+              The solution reduced administrative workload and boosted resolution speed by 30%.
+            </p>
+            <div class="images">
+              <i class="fa-brands fa-windows"></i>
+              <i class="fa-solid fa-database"></i>
             </div>
-            
-        </article>
-    </main>
+            <div class="button-container">
+              <b class="button"><a href="#">View it here</a></b>
+              <b class="button"><a href="https://github.com/Abdul-Hussein/TicketingSystem" target="_blank">GitHub</a></b>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    
-<footer class="footer">
-  <div class="footer-content">
-    <div class="footer-section">
-      <h3>References</h3>
-      <ul>
-        <li><a href="CV.html">My CV</a></li>
-        <li><a href="Home-BlogPage.html">More About Me</a></li>
-        <!-- Add LinkedIn link here -->
-       
-      </ul>
-    </div>
-    <div class="footer-section">
-      <h3>Companies Worked For</h3>
-      <ul>
-        <li><a href="https://mandelagroup.co.ug/">City Tyres</a></li>
-        <li><a href="https://www.tuitioncentres.org/">Axis Tuition Center</a></li>
-      </ul>
-    </div>
-    <div class="footer-section">
-      <h3>Achievements</h3>
-      <ul>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="Projectsfinal.html">Projects</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="contact-info">
-    <h3>Contact Me</h3>
-    <p>Email: abdulxxx321@gmail.com</p>
-    <p>Phone: +1 123-456-7890</p>
-  </div>
-</footer>
+      <br><br><br>
 
+      <!-- BOOK REGISTER APP -->
+      <div class="project_display">
+        <div class="text-container">
+          <h2 class="header">The Book Register App</h2>
+          <div class="text-content">
+            <p class="paragraph">
+              Built a dynamic library management app with search, pagination, and secure authentication.
+              Used Java, JSP, and Spring Boot for the backend and optimized SQL queries for faster data retrieval.
+              Integrated third-party APIs for real-time book information and analytics, improving user engagement.
+            </p>
+            <div class="images">
+              <img class="project-languages" src="Spring-boot-logo.png" alt="">
+              <i class="fa-brands fa-java java"></i>
+              <i class="fab fa-html5 html5"></i>
+              <i class="fa-brands fa-css3-alt css3"></i>
+            </div>
+            <div class="button-container">
+              <b class="button"><a href="#">View it here</a></b>
+              <b class="button"><a href="https://github.com/Abdul-Hussein/BookManagement.git" target="_blank">GitHub</a></b>
+            </div>
+          </div>
+        </div>
+        <figure>
+          <img class="fig" src="Bookreg-photo.png" alt="Book Register App">
+          <img class="badge" src="fourth.png" alt="Rank Icon" class="overlayed">
+        </figure>
+      </div>
+    </article>
+  </main>
 
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>References</h3>
+        <ul>
+          <li><a href="CV.html">My CV</a></li>
+          <li><a href="Home-BlogPage.html">More About Me</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Relevant Industry Experience</h3>
+        <ul>
+          <li>Systems Analysis</li>
+          <li>IT Support</li>
+          <li>Web Development</li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Achievements</h3>
+        <ul>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="Projectsfinal.html">Projects</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="contact-info">
+      <h3>Contact Me</h3>
+      <p>Email: abdirahmanhussein983@gmail.com</p>
+      <p>Phone: +44 7442343562</p>
+    </div>
+  </footer>
 </body>
 </html>

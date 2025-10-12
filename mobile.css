@@ -1,25 +1,242 @@
 /* mobile.css */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
+/* GENERAL RESET */
+body {
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+
+
+/* NAVIGATION */
+.menu {
+  display: none; /* Hidden until toggle */
+  flex-direction: column;
+  background-color: #fff;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 60%;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 1rem 0;
+  z-index: 999;
+}
+
+.menu.show {
+  display: flex; /* Visible when toggled */
+}
+
+.menu li {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.menu li a {
+  color: #333;
+  font-weight: 500;
+}
+
+.menu-icon {
+  display: block;
+  font-size: 2rem;
+  cursor: pointer;
+  margin: 1rem;
+  color: #333;
+}
+
+
+
+/* PROFILE SECTION */
+.profile-section {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 0 1rem;
+}
+
+.profile-section .name {
+  font-size: 1.6rem;
+}
+
+.profile-section .header {
+  font-size: 1.1rem;
+}
+
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: block;
+  margin: 1rem auto;
+}
+
+.brief-overview {
+  font-size: 0.95rem;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* ABOUT SECTION */
+.about-section {
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+.about-section .section-title {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+}
+
+.about-detail {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* HOME BUTTONS */
+.home-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.home-buttons a {
+  width: 80%;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+/* CARD SECTION */
 .card-section {
-  flex-direction: column; /* Change flex direction to column for vertical display */
-  align-items: center; /* Center align items */
-  display: block; /* Reset display to block */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
 
 .card {
-  width: calc(100% - 2.5rem); /* Adjust this value based on your desired spacing */
-  margin: 1.25rem auto; /* Center align cards and adjust margin for spacing */
+  width: calc(100% - 2.5rem);
+  margin: 1.25rem auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
 }
 
-  .menu {
-      display: none; /* Hide the menu for smaller screens */
-      right: 0;
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.card-body h4.card-title {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.card-body .card-text {
+  font-size: 0.9rem;
+  padding: 0 1rem;
+}
+
+.card-body .btn {
+  display: inline-block;
+  margin: 0.8rem 0;
+  font-size: 0.9rem;
+  padding: 8px 14px;
+}
+
+/* PROJECT DISPLAY (for Projects page) */
+.project_display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 2rem auto;
+  width: 95%;
+}
+
+.project_display figure {
+  width: 100%;
+}
+
+.project_display img.fig {
+  width: 100%;
+  height: auto;
+  border-radius: 0; /* square edges */
+}
+
+.text-container h2.header {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+
+.text-container .paragraph {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0.5rem auto;
+  max-width: 95%;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+/* FOOTER */
+.footer-content {
+  flex-direction: column;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+.footer-section {
+  margin-bottom: 1rem;
+}
+
+.footer-section h3 {
+  font-size: 1.1rem;
+}
+
+.footer-section ul li {
+  font-size: 0.9rem;
+  padding: 4px 0;
+}
+
+.contact-info {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* EXTRA SMALL DEVICES */
+@media (max-width: 480px) {
+  .profile-section .name {
+    font-size: 1.4rem;
   }
-  .menu-icon {
-      display: block; /* Display the menu icon for smaller screens */
-      right: 0;
+
+  .brief-overview,
+  .about-detail {
+    font-size: 0.9rem;
   }
 
+  .text-container h2.header {
+    font-size: 1.1rem;
+  }
 
+  .card-body h4.card-title {
+    font-size: 1rem;
+  }
 
+  .footer-section h3 {
+    font-size: 1rem;
+  }
+}

@@ -13,9 +13,36 @@
   <script src="script.js"></script>
   <style>   
     @media (max-width: 768px) {
-      /* Call mobile.css for screens with a width of 768px or less */
       @import url('mobile.css');
     }
+
+     @media (max-width: 768px) {
+
+      /* Footer */
+      .footer-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+      }
+
+      .footer-section {
+        margin-bottom: 1rem;
+      }
+
+      .footer-section h3 {
+        font-size: 1.1rem;
+      }
+
+      .footer-section ul li {
+        font-size: 0.95rem;
+        padding: 4px 0;
+      }
+
+      .contact-info {
+        margin-top: 1.5rem;
+        text-align: center;
+      }
+     }
   </style>
 </head>
 <body>
@@ -26,8 +53,6 @@
       <li><a href="About.html">About</a></li>
       <li><a href="Projects.html">Projects</a></li>
       <li><a href="Contact.html">Contact</a></li>
-
-      
     </ul>
   </nav>
 
@@ -42,12 +67,20 @@
       <h1 class="name">ABDIRAHMAN HUSSEIN</h1>
       <img class="profile-photo" src="photo.png" alt="Profile Photo">
       <h2 class="header">COMPUTER SCIENCE STUDENT</h2>
-      <p class="brief-overview">I have a strong background in designing and troubleshooting network architectures, complemented by hands-on experience with cloud technologies. </p>
+      <p class="brief-overview">
+      I have a strong interest in developing scalable, dependable systems and investigating how technology may address actual business problems. 
+      With experience in development, automation, and data driven apps, I enjoy creating solutions that operate well across multiple platforms.  </p>
     </section>
 
     <section class="about-section" id="About-link">
       <h3 class="section-title">ABOUT ME</h3>
-      <p class="about-detail"> I've worked in a range of capacities, from IT support and web development to teaching and coaching. These experiences have aided in the development of both my technical expertise and my enthusiasm for problem-solving and teamwork. Whether developing online apps, enhancing systems,trouble shooting technical issues or overseeing projects, I approach my work with a well-rounded and versatile mindset that allows me to adapt to a variety of difficulties and industries</p>
+      <p class="about-detail">
+       
+I am presently enrolled in Queen Mary University of London pursuing a degree in Computer Science with Management. 
+My experience includes web development, automation, and IT systems analysis. Distributed systems, data processing, and automation particularly appeal to me as they allow for the large scale influence of seemingly insignificant technical choices. 
+I approach every project with a focus on addressing problems, working to create solutions that improve the reliability and intelligence of processes.
+     
+ </p>
     </section>
 
     <section id="link" class="header">
@@ -59,7 +92,7 @@
         <img class="card-img-top" src="Linkedin-profile.jpg" alt="LinkedIn Profile">
         <div class="card-body">
           <h4 class="card-title">LinkedIn</h4>
-          <p class="card-text">Connect with me on LinkedIn</p>
+          <p class="card-text">Connect with me professionally on LinkedIn to explore my experience and current projects.</p>
           <a href="https://www.linkedin.com/in/abdirahman-ahmed-685b182a5/" target="_blank" class="btn btn-primary">Visit Profile</a>
         </div>
       </div>
@@ -67,7 +100,7 @@
         <img class="card-img-top" src="github.jpg" alt="GitHub Profile">
         <div class="card-body">
           <h4 class="card-title">GitHub</h4>
-          <p class="card-text">Check out my projects on GitHub.</p>
+          <p class="card-text">Browse my repositories for projects in Java, Spring, and full-stack web development.</p>
           <a href="https://github.com/Abdul-Hussein?tab=projects" target="_blank" class="btn btn-primary">Visit GitHub</a>
         </div>
       </div>
@@ -75,14 +108,12 @@
         <img class="card-img-top" src="CVphoto.png" alt="CV">
         <div class="card-body">
           <h4 class="card-title">Curriculum Vitae</h4>
-          <p class="card-text">View my professional Curriculum Vitae.</p>
+          <p class="card-text">Review my professional CV highlighting my experience, education, and technical skills.</p>
           <a href="CV.html" target="_blank" class="btn btn-primary">My CV</a>
         </div>
       </div>
     </section>
-
-
- </article>
+  </article>
 
   <footer class="footer">
     <div class="footer-content">
@@ -91,16 +122,17 @@
         <ul>
           <li><a href="CV.html">My CV</a></li>
           <li><a href="Home-BlogPage.html">More About Me</a></li>
-          <!-- Add LinkedIn link here -->
         </ul>
       </div>
-      <div id="experience" class="footer-section">
-        <h3>Companies Worked For</h3>
-        <ul>
-          <li><a href="https://mandelagroup.co.ug/">City Tyres</a></li>
-          <li><a href="https://www.tuitioncentres.org/">Axis Tuition Center</a></li>
-        </ul>
-      </div>
+      <div class="footer-section">
+  <h3> Relevant Industry Experience</h3>
+  <ul>
+    <li>Systems Analysis</li>
+    <li>IT Support </li>
+    <li>Web Development</li>
+  
+  </ul>
+</div>
       <div class="footer-section">
         <h3>Achievements</h3>
         <ul>
@@ -111,7 +143,7 @@
     </div>
     <div class="contact-info">
       <h3>Contact Me</h3>
-      <p>Email: abdulxxx321@gmail.com</p>
+      <p>Email: abdirahmanhussein983@gmail.com</p>
       <p>Phone: +44 7442343562</p>
     </div>
   </footer>
